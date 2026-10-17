@@ -47,12 +47,17 @@ h1{margin:0;font-family:var(--serif);font-weight:400;font-size:38px;line-height:
 .work .meta{font-size:13px;color:var(--muted)}
 .rep{display:flex;flex-wrap:wrap;gap:4px 24px}
 .rep .label{flex:0 0 120px;padding-top:3px}
-.rep .who{flex:1 1 220px;font-size:14px;line-height:1.6}
+.rep .who{flex:1 1 220px;font-size:14px;line-height:1.6;display:flex;flex-direction:column;gap:12px}
+.who-next{display:block}
 footer{width:100%;max-width:1240px;margin:0 auto;padding:24px 40px 40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px;color:var(--label)}
 @media (max-width:640px){
   .wrap{padding:32px 16px 40px;gap:40px}
   footer{padding:24px 16px 32px}
   h1{font-size:34px}
+  .work{flex-direction:column;align-items:flex-start}
+  .rep{flex-direction:column;gap:6px}
+  .rep .label{flex:none;padding-top:0}
+  .rep .who{flex:none}
 }
 </style>
 </head>
@@ -76,9 +81,9 @@ footer{width:100%;max-width:1240px;margin:0 auto;padding:24px 40px 40px;display:
         <div class="work"><span class="title">Affairs of State</span><span class="meta">Feature · Star Thrower Entertainment · In development</span></div>
       </div>
       <div class="block">
-        <div class="rep"><span class="label">Agency</span><span class="who">CAA<br>Rowena Arguelles · <a href="mailto:rarguelles@caa.com">rarguelles@caa.com</a><br>Connie Yan · <a href="mailto:connie.yan@caa.com">connie.yan@caa.com</a></span></div>
-        <div class="rep"><span class="label">Management</span><span class="who">Common Ground Entertainment<br>Charlie Gavshon · <a href="mailto:charlie@commongroundent.com">charlie@commongroundent.com</a></span></div>
-        <div class="rep"><span class="label">Legal</span><span class="who">Ginsburg Daniels Kallis<br>Lev Ginsburg · <a href="tel:+13102743210">310 274 3210</a></span></div>
+        <div class="rep"><span class="label">Agency</span><span class="who"><span class="who-next">CAA<br>Rowena Arguelles<br><a href="mailto:rarguelles@caa.com">rarguelles@caa.com</a></span><span class="who-next">Connie Yan<br><a href="mailto:connie.yan@caa.com">connie.yan@caa.com</a></span></span></div>
+        <div class="rep"><span class="label">Management</span><span class="who"><span class="who-next">Common Ground Entertainment<br>Charlie Gavshon<br><a href="mailto:charlie@commongroundent.com">charlie@commongroundent.com</a></span></span></div>
+        <div class="rep"><span class="label">Legal</span><span class="who"><span class="who-next">Ginsburg Daniels Kallis<br>Lev Ginsburg<br><a href="tel:+13102743210">310 274 3210</a></span></span></div>
       </div>
     </div>
   </div>
